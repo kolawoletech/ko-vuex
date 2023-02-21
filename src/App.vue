@@ -2,7 +2,6 @@
   <div id="app">
     <product-list-one :products="products" />
     <product-list-two :products="products" />
-
   </div>
 </template>
 
