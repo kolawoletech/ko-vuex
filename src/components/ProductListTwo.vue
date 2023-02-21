@@ -46,4 +46,4 @@ export default {
     color: #860CE8;
     display: block;
 }
-</style>
+ </style>
