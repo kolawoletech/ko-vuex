@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <product-list-one :products="products" />
-    <product-list-two :products="products" />
+    <product-list-one />
+    <product-list-two />
   </div>
 </template>
 
@@ -15,13 +15,13 @@ export default {
   components: {
     "product-list-one": ProductListOne,
     'product-list-two': ProductListTwo
-  },
-  data() {
-    return {
-           s
-    }
   }
 }
 </script>
 
-<style></style>
+<style>
+body {
+  font-family: Ubuntu;
+  color: #555;
+}
+</style>
