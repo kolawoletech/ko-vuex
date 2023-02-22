@@ -19,6 +19,13 @@ export default {
         saleProducts() {
             return this.$store.getters.salesProducts
         }
+    
+    },
+  
+    method:{
+        reducePrice: function () {
+            return
+        }
     }
 }
 </script>

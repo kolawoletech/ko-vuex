@@ -5,6 +5,7 @@
             <li v-for="product in saleProducts">
                 <span class="name">{{ product.name }}</span>
                 <span class="name">{{ product.price }}</span>
+                <button v-bind:on-click="reducePrice()"> reducePrice</button>
             </li>
         </ul>
     </div>
@@ -17,6 +18,11 @@ export default {
         },
         saleProducts(){
             return this.$store.getters.salesProducts
+        }
+    }, 
+    methods: {
+        reducePrice: function () {
+            this.$store.dispatch('reducePrice')
         }
     }
 }
